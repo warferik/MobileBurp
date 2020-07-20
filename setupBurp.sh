@@ -21,11 +21,8 @@ adb remount
 adb push $hash.0 /sdcard/
 
 echo "run following command in adb shell"
-echo 
-"mv /sdcard/$hash.0 /system/etc/security/cacerts/
-
-chmod 644 /system/etc/security/cacerts/$hash.0
-
-reboot"
+echo "mv /sdcard/$hash.0 /system/etc/security/cacerts/"
+echo "chmod 644 /system/etc/security/cacerts/$hash.0"
+echo "reboot"
 
 
