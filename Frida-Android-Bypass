@@ -1,3 +1,13 @@
+/* 
+   Android SSL Re-pinning frida script v0.2 030417-pier 
+
+   $ adb push burpca-cert-der.crt /data/local/tmp/cert-der.crt
+   $ frida -U -f it.app.mobile -l frida-android-repinning.js --no-pause
+  
+   https://codeshare.frida.re/@pcipolloni/universal-android-ssl-pinning-bypass-with-frida/
+   https://blog.nviso.eu/2019/04/02/circumventing-ssl-pinning-in-obfuscated-apps-with-okhttp/
+*/
+
 Java.perform(function(){
     try {
     var Pinner = Java.use("p.g$a");
