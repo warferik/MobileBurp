@@ -19,6 +19,8 @@ echo "move cert file to android"
 adb root
 adb remount
 adb push $hash.0 /sdcard/
+#Below is for ssl pinning bypass if needed
+adb push cacert.der /data/local/tmp/cert-der.crt
 
 adb shell 'mv /sdcard/$hash.0 /system/etc/security/cacerts/'
 adb shell 'chmod 644 /system/etc/security/cacerts/$hash.0'
