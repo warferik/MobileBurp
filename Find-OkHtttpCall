@@ -3,6 +3,8 @@ apktool d app.apk
 grep -ri "java/lang/String;\[Ljava/lang/String;)L" application/smali
 
 based on: https://blog.nviso.eu/2019/04/02/circumventing-ssl-pinning-in-obfuscated-apps-with-okhttp/
+&
+https://medium.com/@ved_wayal/hail-frida-the-universal-ssl-pinning-bypass-for-android-e9e1d733d29
 
 grep -ri "java/lang/String;\[Ljava/lang/String;)L" smali/        
 smali//h/i/a/a/u7.smali:    invoke-virtual {v1, p1, v2}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
