@@ -1,0 +1,40 @@
+grep -ri "java/lang/String;\[Ljava/lang/String;)L" application/smali
+
+based on: https://blog.nviso.eu/2019/04/02/circumventing-ssl-pinning-in-obfuscated-apps-with-okhttp/
+
+grep -ri "java/lang/String;\[Ljava/lang/String;)L" smali/        
+smali//h/i/a/a/u7.smali:    invoke-virtual {v1, p1, v2}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+smali//h/f/a/a/j/x/k/b0.smali:    invoke-virtual {p0, p1, p2}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+smali//h/f/a/a/j/x/k/b0.smali:    invoke-virtual {p0, v1, v0}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+smali//h/f/a/a/j/x/k/b0.smali:    invoke-virtual {v0, p1, v1}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+smali//h/f/a/a/j/x/k/h0.smali:    invoke-virtual {p1, v2, v1}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+smali//h/f/a/b/n/b/h.smali:    invoke-virtual {p0, p1, v1}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+smali//h/f/a/b/n/b/b6.smali:    invoke-static {p0, v0, v1}, Lh/f/a/b/n/b/o7;->c(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
+smali//h/f/a/b/n/b/q9.smali:    invoke-virtual {v10, v11, v6}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+smali//h/f/a/b/n/b/q9.smali:    invoke-virtual {v10, v6, v11}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+smali//h/f/a/b/n/b/q9.smali:    invoke-virtual {v4, v8, v9}, Lh/f/a/b/n/b/d;->M(Ljava/lang/String;[Ljava/lang/String;)Ljava/util/List;
+smali//h/f/a/b/n/b/q9.smali:    invoke-virtual {v4, v8, v9}, Lh/f/a/b/n/b/d;->M(Ljava/lang/String;[Ljava/lang/String;)Ljava/util/List;
+smali//h/f/a/b/n/b/q9.smali:    invoke-virtual {v4, v6, v7}, Lh/f/a/b/n/b/d;->M(Ljava/lang/String;[Ljava/lang/String;)Ljava/util/List;
+smali//h/f/a/b/n/b/a6.smali:    invoke-static {p0, v0, v1}, Lh/f/a/b/n/b/o7;->c(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
+smali//h/f/a/b/n/b/s3.smali:    invoke-virtual {v9, v0, v7}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+smali//h/f/a/b/n/b/y5.smali:    invoke-static {p0, v0, v1}, Lh/f/a/b/n/b/o7;->c(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
+smali//h/f/a/b/n/b/y5.smali:    invoke-static {p0, v0, v1}, Lh/f/a/b/n/b/o7;->c(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
+smali//h/f/a/b/n/b/d.smali:    invoke-virtual {v0, p1, p2}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+smali//h/f/a/b/n/b/d.smali:    invoke-virtual {v1, v2, v3}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+smali//h/f/a/b/n/b/d.smali:    invoke-virtual {v1, v2, v3}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+smali//h/f/a/b/n/b/d.smali:    invoke-virtual {v1, v2, v3}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+smali//h/f/a/b/n/b/d.smali:    invoke-virtual {v0, p1, p2}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+smali//h/f/a/b/n/b/d.smali:    invoke-virtual {v3, v4, v2}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+smali//h/f/a/b/n/b/d.smali:.method public final M(Ljava/lang/String;[Ljava/lang/String;)Ljava/util/List;
+smali//h/f/a/b/n/b/d.smali:    invoke-virtual {v0, p1, p2}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+smali//h/f/a/b/n/b/d.smali:    invoke-virtual {p0, p1, p2}, Lh/f/a/b/n/b/d;->M(Ljava/lang/String;[Ljava/lang/String;)Ljava/util/List;
+smali//h/f/a/b/n/b/d.smali:    invoke-virtual {v1, v3, v4}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+smali//h/f/a/b/n/b/d.smali:    invoke-virtual {v0, v2, v1}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+smali//h/f/a/b/n/b/o7.smali:.method public static c(Ljava/lang/String;[Ljava/lang/String;[Ljava/lang/String;)Ljava/lang/String;
+smali//h/k/a/a/i/l/i.smali:.method public abstract a(Ljava/lang/String;[Ljava/lang/String;)Lh/k/a/a/i/l/j;
+smali//h/k/a/a/i/l/a.smali:.method public a(Ljava/lang/String;[Ljava/lang/String;)Lh/k/a/a/i/l/j;
+smali//h/k/a/a/i/l/a.smali:    invoke-virtual {v0, p1, p2}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+smali//h/k/a/a/i/l/b.smali:    invoke-virtual {v3, v4, v0}, Landroid/database/sqlite/SQLiteDatabase;->rawQuery(Ljava/lang/String;[Ljava/lang/String;)Landroid/database/Cursor;
+smali//h/k/a/a/h/f/t.smali:    invoke-interface {p1, v0, v1}, Lh/k/a/a/i/l/i;->a(Ljava/lang/String;[Ljava/lang/String;)Lh/k/a/a/i/l/j;
+smali//h/k/a/a/h/h/c.smali:    invoke-interface {p1, p2, v0}, Lh/k/a/a/i/l/i;->a(Ljava/lang/String;[Ljava/lang/String;)Lh/k/a/a/i/l/j;
+smali//p/g$a.smali:.method public varargs a(Ljava/lang/String;[Ljava/lang/String;)Lp/g$a;
