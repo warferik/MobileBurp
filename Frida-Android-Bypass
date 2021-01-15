@@ -6,6 +6,8 @@
   
    https://codeshare.frida.re/@pcipolloni/universal-android-ssl-pinning-bypass-with-frida/
    https://blog.nviso.eu/2019/04/02/circumventing-ssl-pinning-in-obfuscated-apps-with-okhttp/
+   works best in frida console in MobSF
+   Mobile-Security-Framework-MobSF/DynamicAnalyzer/tools/frida_scripts/others
 */
 
 Java.perform(function(){
