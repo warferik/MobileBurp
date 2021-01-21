@@ -24,6 +24,7 @@ adb push cacert.der /data/local/tmp/cert-der.crt
 
 adb shell 'mv /sdcard/$hash.0 /system/etc/security/cacerts/'
 adb shell 'chmod 644 /system/etc/security/cacerts/$hash.0'
+adb shell 'chmod 644 /data/local/tmp/cert-der.crt'
 adb shell 'reboot'
 
 
